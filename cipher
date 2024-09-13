@@ -1,0 +1,5 @@
+def cipher(string, factor)
+  cipher = string.chars.map(&:ord)
+  cipher = cipher.map { |char| char + factor }
+  return cipher.map(&:chr).join
+end
